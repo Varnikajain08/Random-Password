@@ -4,7 +4,7 @@ const length = 10;
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase = "abcdefghijklmnopqrstuwxyz";
 const number = "0123456789";
-const symbols = "@#$%^&*\";
+const symbols = "@#$%^&*";
 
 const allChar = upperCase + lowerCase + number + symbols;
 
@@ -19,10 +19,9 @@ function createPassword(){
             password += allChar[Math.floor(Math.random() * allChar.length)];
         }
          passwordBox.value = password;
-         
+}   
          function copyPassword(){
             passwordBox.select();
             document.execCommand("copy");
     }
- };
  
