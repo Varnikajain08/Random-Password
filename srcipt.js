@@ -21,7 +21,7 @@ function createPassword(){
          passwordBox.value = password;
 }   
          function copyPassword(){
-            passwordBox.select();
-            document.execCommand("copy");
+             passwordBox.select();
+             navigator.clipboard.writeText(passwordBox.value);
     }
  
